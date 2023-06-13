@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Fira Code', sans-serif; 
+}
+header {
+    background-color: #2C1D4B;
+    
+}
+.nav-bar{
+    display: flex;
+    justify-content:  space-between;
+    padding: 0.625rem 1.18rem;
+    
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.nav-list{
+    display: flex;
+    align-items: center;
+}
+.nav-list ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    position: relative;
+}
+.nav-list ul input{
+    border-radius: 6px;
+    border: none;
+    height: 2.313rem;
+}
+.fa-magnifying-glass{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    color: #000000;
+}
+.nav-item{
+    display: flex;
+    margin: 0 15px;
+    justify-content: center;
+    align-items: center;
+}
+.nav-link{
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: #FFF;
+    font-weight: 400;
+}
+.user-icon{
+    border: none;
+    outline: none;
+}
+.mobile-menu-icon{
+    display: none;
+}
+.mobile-menu{
+    display: none;
+}
+@media screen and (max-width: 730px) {
+    .nav-bar{
+        padding: 1.5rem 4rem;
+    }
+    .nav-item{
+        display: none;
+    }
+    .nav-list ul input{
+        display: none;
+    }
+    .fa-magnifying-glass{
+        display: none;
+    }
+    .mobile-menu-icon{
+        display: block;
+    }
+    .mobile-menu-icon button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .mobile-menu ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .mobile-menu .nav-item{
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .mobile-menu .login-button {
+        display: block;
+        padding: 1rem 2rem;
+    }
+    .mobile-menu .login-button button{
+        width: 100%;
+    }
+    .open{
+        display: block;
+    }
+}   

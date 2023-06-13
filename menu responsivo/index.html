@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Responsivo</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://kit.fontawesome.com/276a6af193.js" crossorigin="anonymous"></script>
+</head>
+    <body>
+        <header>
+            <nav class="nav-bar">
+                <div class="logo">
+                    <img src="assets/img/Logo White.png" alt="" width="60px ">
+                </div>
+
+                <div class="nav-list">
+                    <ul>
+                        <li class="nav-item"><a href="#" class="nav-link">Transmissões</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Torneios</a></li>
+                        <input type="text" name="search" id="search" placeholder="Pesquisar">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </ul>
+                    <img class="user-icon" src="assets/img/User.png" alt="" width="64px">
+                </div>
+                <div class="mobile-menu-icon">
+                    <button onclick="menuShow()"><img class="icon" src="assets/img/menu_white_36dp.svg" alt=""></button>
+                </div>
+            </nav>
+            <div class="mobile-menu">
+                <ul>
+                    <li class="nav-item"><a href="#" class="nav-link">Transmissões</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Torneios</a></li>
+                        <input type="text" name="search" id="search" placeholder="Pesquisar">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                </ul>
+            </div>
+        </header>
+        <script src="assets/js/script.js"></script>
+    </body>
+</html>
